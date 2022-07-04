@@ -1,0 +1,20 @@
+{
+  "name": "LiChessable",
+  "description": "Go from Chessable to Lichess analysis with a single click!",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "permissions": [],
+  "icons": {
+    "16": "/images/lichessable-16.png",
+    "32": "/images/lichessable-32.png",
+    "48": "/images/lichessable-48.png",
+    "128": "/images/lichessable-128.png",
+    "512": "/images/lichessable.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.chessable.com/analysis/*"],
+      "js": ["content-script.js"]
+    }
+  ]
+}
